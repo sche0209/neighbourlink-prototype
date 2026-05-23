@@ -164,6 +164,16 @@ textarea {
   font-weight: normal;
 }
 
+.upload-box {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 14px;
+    text-align: center;
+    color: #666;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
 .star-rating label:hover,
 .star-rating label:hover ~ label,
 .star-rating input:checked + label,
