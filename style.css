@@ -174,6 +174,23 @@ textarea {
     margin-bottom: 16px;
 }
 
+.upload-button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #333;
+  background: white;
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+
+.upload-button:hover {
+  background: #f4f4f1;
+}
+
 .star-rating label:hover,
 .star-rating label:hover ~ label,
 .star-rating input:checked + label,
