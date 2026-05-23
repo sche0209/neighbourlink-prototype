@@ -9,6 +9,8 @@ body {
   color: #222;
 }
 
+/* PHONE FRAME */
+
 .phone {
   width: 430px;
   height: 844px;
@@ -20,6 +22,8 @@ body {
   overflow: hidden;
 }
 
+/* HEADER */
+
 .header {
   background: #65a17d;
   color: white;
@@ -29,7 +33,7 @@ body {
 .header h1 {
   margin: 0;
   font-size: 28px;
-  color: #111;
+  color: white;
 }
 
 .header .brand {
@@ -43,15 +47,27 @@ body {
   font-size: 22px;
 }
 
+.return {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+/* CONTENT */
+
 .content {
   padding: 20px 28px 90px;
-  height: calc(844px - 180px - 68px);
+  height: calc(100% - 180px);
   overflow-y: auto;
 }
 
 h2 {
   margin: 0 0 12px;
 }
+
+/* FORM */
 
 label {
   display: block;
@@ -69,12 +85,19 @@ textarea {
   border-radius: 14px;
   font-size: 16px;
   margin-top: 5px;
+  background: white;
 }
 
 .row {
   display: flex;
   gap: 10px;
 }
+
+.row > div {
+  flex: 1;
+}
+
+/* CARDS */
 
 .card {
   background: #f4f4f1;
@@ -83,6 +106,8 @@ textarea {
   padding: 18px;
   margin: 16px 0;
 }
+
+/* BUTTONS */
 
 .button {
   display: block;
@@ -97,6 +122,10 @@ textarea {
   margin-top: 16px;
 }
 
+.button:hover {
+  background: #f4f4f1;
+}
+
 .small-button {
   display: inline-block;
   width: 48%;
@@ -109,9 +138,36 @@ textarea {
   font-weight: bold;
 }
 
+.small-button:hover {
+  background: #f4f4f1;
+}
+
+/* UPLOAD BUTTON */
+
+.upload-button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #333;
+  background: white;
+  margin-top: 6px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.upload-button:hover {
+  background: #f4f4f1;
+}
+
+/* BOTTOM NAV */
+
 .bottom-nav {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
   height: 68px;
   border-top: 1px solid #ccc;
@@ -119,6 +175,7 @@ textarea {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 10;
 }
 
 .bottom-nav a {
@@ -129,6 +186,10 @@ textarea {
   text-align: center;
 }
 
+.bottom-nav a:hover {
+  color: #4f8b68;
+}
+
 .nav-icon {
   display: block;
   font-size: 26px;
@@ -136,6 +197,8 @@ textarea {
   height: 30px;
   margin-bottom: 3px;
 }
+
+/* RATING PAGE */
 
 .review-content {
   text-align: center;
@@ -164,36 +227,34 @@ textarea {
   font-weight: normal;
 }
 
-.upload-box {
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    padding: 14px;
-    text-align: center;
-    color: #666;
-    margin-top: 8px;
-    margin-bottom: 16px;
-}
-
-.upload-button {
-  display: block;
-  width: 100%;
-  padding: 14px;
-  border: 1px solid #ccc;
-  border-radius: 14px;
-  text-decoration: none;
-  color: #333;
-  background: white;
-  margin-top: 6px;
-  margin-bottom: 18px;
-}
-
-.upload-button:hover {
-  background: #f4f4f1;
-}
-
 .star-rating label:hover,
 .star-rating label:hover ~ label,
 .star-rating input:checked + label,
 .star-rating input:checked + label ~ label {
   color: #f2c94c;
+}
+
+/* DRIVER / RIDER RATING TAGS */
+
+.rating {
+  background: #9fc3aa;
+  padding: 7px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-right: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 500px) {
+
+  .phone {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    border-radius: 0;
+  }
+
 }
