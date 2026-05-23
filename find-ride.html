@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find a Ride</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone">
+
+  <div class="header">
+    <a class="return" href="dashboard.html">← Return</a>
+    <h1>Find a Ride</h1>
+  </div>
+
+  <div class="content">
+    <h2>Details</h2>
+
+    <label>From</label>
+    <input placeholder="Enter starting location">
+
+    <label>To</label>
+    <input placeholder="Enter ending location">
+
+    <label>Date</label>
+    <div class="row">
+      <select><option>DD</option></select>
+      <select><option>MM</option></select>
+      <select><option>YYYY</option></select>
+    </div>
+
+    <label>Time</label>
+    <div class="row">
+      <input value="11">
+      <input value="30">
+      <input value="AM">
+    </div>
+
+    <label>No. of passengers</label>
+    <input type="number" value="1">
+
+    <a class="button" href="#rides">Search rides</a>
+
+    <h2 id="rides">Available Rides</h2>
+
+    <div class="card">
+      <strong>Emma Clarke</strong>
+      <p>Driver rating: ⭐⭐⭐⭐⭐ 4.8 (41 rides)</p>
+      <p>Departs 7:30 am From → To</p>
+      <a class="small-button" href="#">View Profile</a>
+      <a class="small-button" href="confirmed.html">Request seat</a>
+    </div>
+
+    <div class="card">
+      <strong>James Reid</strong>
+      <p>Driver rating: ⭐⭐⭐⭐☆ 4.3 (17 rides)</p>
+      <p>Departs 8:30 am From → To</p>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+  <a href="dashboard.html">
+    <span class="nav-icon">◎</span>
+    <span>Dashboard</span>
+  </a>
+
+  <a href="confirmed.html">
+    <span class="nav-icon">◫</span>
+    <span>My Ride</span>
+  </a>
+
+  <a href="profile.html">
+    <span class="nav-icon">♡</span>
+    <span>Profile</span>
+  </a>
+</div>
+
+</div>
+
+</body>
+</html>

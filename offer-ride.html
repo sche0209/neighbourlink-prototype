@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Offer a Ride</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone">
+
+  <div class="header">
+    <a class="return" href="dashboard.html">← Return</a>
+    <h1>Offer a ride</h1>
+  </div>
+
+  <div class="content">
+    <h2>Details</h2>
+
+    <label>From</label>
+    <input placeholder="Enter starting location">
+
+    <label>To</label>
+    <input placeholder="Enter ending location">
+
+    <label>Date</label>
+    <div class="row">
+      <select><option>DD</option></select>
+      <select><option>MM</option></select>
+      <select><option>YYYY</option></select>
+    </div>
+
+    <label>Time</label>
+    <div class="row">
+      <input value="11">
+      <input value="30">
+      <input value="AM">
+    </div>
+
+    <label>No. of available seats</label>
+    <input type="number" value="1">
+
+    <a class="button" href="#request">Post ride offer</a>
+
+    <h2 style="text-align:center; color:#777;">Incoming request</h2>
+
+    <div class="card" id="request">
+      <p><strong>NEW REQUEST</strong> <span style="float:right;">Pending</span></p>
+      <strong>Daniel Mwangi</strong>
+      <p>Wants to join - Tomorrow 7:30 am</p>
+      <p>Rider rating: ⭐⭐⭐⭐⭐ 4.9 (23 rides)</p>
+
+      <a class="small-button" href="dashboard.html">Decline</a>
+      <a class="small-button" href="confirmed.html">Accept</a>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+  <a href="dashboard.html">
+    <span class="nav-icon">◎</span>
+    <span>Dashboard</span>
+  </a>
+
+  <a href="confirmed.html">
+    <span class="nav-icon">◫</span>
+    <span>My Ride</span>
+  </a>
+
+  <a href="profile.html">
+    <span class="nav-icon">♡</span>
+    <span>Profile</span>
+  </a>
+</div>
+
+</body>
+</html>
